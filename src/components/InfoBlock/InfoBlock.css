@@ -1,9 +1,9 @@
 .info-block {
-  background-color: #ffffff;
-  height: 125px;
   position: absolute;
-  top: 85px;
+  height: 125px;
   width: calc(100% - 50px);
+  top: 85px;
+  background-color: #ffffff;
   margin-left: 25px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -15,7 +15,7 @@
   font-family: Open Sans, serif;
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.5em;
 }
 
 .info-block__combustion {
@@ -25,7 +25,7 @@
   color: #979797;
   font-family: Open Sans, serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .img-arrow {
