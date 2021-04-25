@@ -1,0 +1,19 @@
+.bage {
+    display: inline-block;
+    background: linear-gradient(180deg, #d2333e 0%, #f54b55 100%);
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    margin-right: 7%;
+    margin-top: 40px;
+}
+
+.bage::after {
+    content: attr(data-content);
+    margin: 9px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    font-style: italic;
+}
+
