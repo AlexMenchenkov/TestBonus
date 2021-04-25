@@ -1,4 +1,3 @@
-import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses} from '../src/redux/app/seletors';
 import Block from './components/Block/Block';
 import InfoBlock from './components/InfoBlock/InfoBlock';
 import {getAccessToken} from './redux/app/actions';
@@ -12,6 +11,7 @@ const App = ({getAccessToken}) => {
 
     useEffect(() => {
         getAccessToken();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
       return (<>
