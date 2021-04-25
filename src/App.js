@@ -6,8 +6,9 @@ import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
 import {textHeader, symbol, backgroundWhite, backgroundRed} from '../src/const/const';
 import './App.css';
+import {props} from './App-prop';
 
-const App = ({getAccessToken, combustionBonusesCount, combustionDate, currentBonuses}) => {
+const App = ({getAccessToken}) => {
 
     useEffect(() => {
         getAccessToken();
@@ -24,24 +25,15 @@ const App = ({getAccessToken, combustionBonusesCount, combustionDate, currentBon
               background={backgroundRed}
           >
           </Block>
-          <InfoBlock
-              currentBonuses={currentBonuses}
-              combustionDate={combustionDate}
-              combustionBonusesCount={combustionBonusesCount}
-          >
-          </InfoBlock>
+          <InfoBlock/>
       </>);
 };
 
-const mapStateToProps = state => ({
-    combustionDate: getCombustionDate(state),
-    combustionBonusesCount: getCombustionBonusesCount(state),
-    currentBonuses: getCurrentBonuses(state),
-});
+App.propTypes = props;
 
 const mapDispatchToProps = {
   getAccessToken: getAccessToken,
 };
 
 export {App};
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);

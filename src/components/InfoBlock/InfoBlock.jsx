@@ -1,9 +1,12 @@
 import React from "react";
 import './InfoBlock.css'
+import {connect} from "react-redux";
+import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses} from '../../redux/app/seletors';
 import {getStringDeclination} from '../../utils/index';
 import {declinationArray} from '../../const/const'
 import fire from '../../img/fire.svg'
 import arrow from '../../img/arrow.svg'
+import {props} from './InfoBlock-prop';
 
 const InfoBlock = ({currentBonuses, combustionDate, combustionBonusesCount}) => {
 
@@ -20,4 +23,13 @@ const InfoBlock = ({currentBonuses, combustionDate, combustionBonusesCount}) => 
 	</>);
 };
 
-export default InfoBlock;
+InfoBlock.propTypes = props;
+
+const mapStateToProps = state => ({
+	combustionDate: getCombustionDate(state),
+	combustionBonusesCount: getCombustionBonusesCount(state),
+	currentBonuses: getCurrentBonuses(state),
+});
+
+export {InfoBlock};
+export default connect(mapStateToProps)(InfoBlock);

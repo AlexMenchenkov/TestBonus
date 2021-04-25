@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "axios": "^0.21.1",
+    "prop-types": "^15.7.2",
     "react-redux": "^7.2.4",
     "redux-mock-store": "^1.5.4"
   }

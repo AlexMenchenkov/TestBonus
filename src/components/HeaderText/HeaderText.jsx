@@ -1,5 +1,6 @@
 import React from "react";
 import './HeaderText.css'
+import {props} from './HeaderText-prop';
 
 const HeaderText = ({text}) => {
 
@@ -7,5 +8,7 @@ const HeaderText = ({text}) => {
 		<div className={'block__text'}>{text}</div>
 	);
 };
+
+HeaderText.propTypes = props;
 
 export default HeaderText;

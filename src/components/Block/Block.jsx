@@ -2,6 +2,7 @@ import React from "react";
 import HeaderText from '../../components/HeaderText/HeaderText';
 import Bage from '../../components/Bage/Bage';
 import './Block.css'
+import {props} from './Block-prop';
 
 const Block = ({text, symbol, background}) => {
 
@@ -18,5 +19,7 @@ const Block = ({text, symbol, background}) => {
 		</div>
 	);
 };
+
+Block.propTypes = props;
 
 export default Block;
