@@ -1,12 +1,11 @@
 import {ZERO, ONE} from '../const/const'
-import {idClient, paramValue} from '../const/keys'
 
 export const getRequestBody = () => {
 	return {
-		idClient,
+		idClient: process.env.REACT_APP_CLIENT_ID,
 		accessToken: '',
 		paramName: 'device',
-		paramValue,
+		paramValue: process.env.REACT_APP_PARAM_VALUE,
 		latitude: ZERO,
 		longitude: ZERO,
 		sourceQuery: ZERO,
