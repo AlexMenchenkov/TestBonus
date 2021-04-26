@@ -6,7 +6,7 @@ import {getAccessToken, getData} from '../services/api';
 export function* sagaGetToken() {
 	try {
 		const res = yield call(getAccessToken);
-		const accessToken = yield res.data.accessToken;
+		const accessToken = res.data.accessToken;
 		const data = yield call(getData, accessToken);
 		yield put(saveData(data.data.data));
 	} catch (e) {
