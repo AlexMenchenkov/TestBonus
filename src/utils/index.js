@@ -1,4 +1,5 @@
-import {idClient, paramValue, ZERO, ONE} from '../const/const'
+import {ZERO, ONE} from '../const/const'
+import {idClient, paramValue} from '../const/keys'
 
 export const getRequestBody = () => {
 	return {

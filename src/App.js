@@ -3,7 +3,8 @@ import InfoBlock from './components/InfoBlock/InfoBlock';
 import {getAccessToken} from './redux/app/actions';
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
-import {textHeader, symbol, backgroundWhite, backgroundRed} from '../src/const/const';
+import {textHeader, symbol, } from '../src/const/ui-texts';
+import {backgroundWhite, backgroundRed} from '../src/const/styles';
 import './App.css';
 import {props} from './App-prop';
 

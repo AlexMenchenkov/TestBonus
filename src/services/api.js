@@ -1,6 +1,7 @@
 import axios from "axios";
 import {getRequestBody} from '../utils';
-import {urlProxyClients, urlProxyIbonus, DEFAULT_HEADERS} from '../const/const';
+import {DEFAULT_HEADERS} from '../const/headers';
+import {urlProxyClients, urlProxyIbonus} from '../const/urls';
 
 export const send = axios.create({
 	responseType: 'json',
