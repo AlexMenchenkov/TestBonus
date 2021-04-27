@@ -11,14 +11,19 @@ import {props} from './InfoBlock-prop';
 const InfoBlock = ({currentBonuses, combustionDate, combustionBonusesCount}) => {
 
 	return (<>
-		<div className={'info-block'}>
-			<div className={'info-block__current'}>{getStringDeclination(currentBonuses, DECLINATION_ARRAY)}</div>
-			<div className={'info-block__combustion'}>
-				{combustionDate} сгорит&nbsp;&nbsp;
-				<img className={'img-fire'} src={fire} alt={'fire'}/>&nbsp;&nbsp;
-				{getStringDeclination(combustionBonusesCount, DECLINATION_ARRAY)}
+		<div className={'info-block-container'}>
+			<div className={'info-block'}>
+				<div className={'info-block__current'}>
+					{getStringDeclination(currentBonuses, DECLINATION_ARRAY)}
+					<img className={'img-arrow'} src={arrow} alt={'arrow'}/>
+				</div>
+				<div className={'info-block__combustion'}>
+					{combustionDate} сгорит
+					<img className={'img-fire'} src={fire} alt={'fire'}/>
+					{getStringDeclination(combustionBonusesCount, DECLINATION_ARRAY)}
+				</div>
+				
 			</div>
-			<img className={'img-arrow'} src={arrow} alt={'arrow'}/>
 		</div>
 	</>);
 };
