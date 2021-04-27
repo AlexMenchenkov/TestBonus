@@ -1,9 +1,10 @@
+import {initValue} from '../../const/numbers';
 import {ActionTypes} from './actions';
 
 const initialStore = {
-	combustionBonusesCount: 0,
+	combustionBonusesCount: initValue,
 	combustionDate: '',
-	currentBonuses: 0,
+	currentBonuses: initValue,
 };
 
 export default function reducer(state = initialStore, action) {
