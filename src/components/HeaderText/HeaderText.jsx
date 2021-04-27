@@ -1,5 +1,5 @@
 import React from "react";
-import './HeaderText.css'
+import './HeaderText.scss'
 import {props} from './HeaderText-prop';
 
 const HeaderText = ({text}) => {

@@ -5,7 +5,7 @@ import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
 import {TEXT_HEARED, SYMBOL_I} from '../src/const/ui-texts';
 import {BACKGROUND_RED, BACKGROUND_WHITE} from '../src/const/styles';
-import './App.css';
+import './App.scss';
 import {props} from './App-prop';
 
 const App = ({getAccessToken}) => {

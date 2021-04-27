@@ -1,5 +1,5 @@
 import React from "react";
-import './Bage.css';
+import './Bage.scss';
 import {props} from './Bage-prop';
 
 const Bage = ({symbol}) => {

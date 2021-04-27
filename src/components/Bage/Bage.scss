@@ -6,14 +6,15 @@
     border-radius: 12px;
     margin-right: 7%;
     margin-top: 40px;
+
+    &::after {
+         content: attr(data-content);
+         margin: 9px;
+         font-size: 21px;
+         font-weight: bold;
+         color: #ffffff;
+         font-style: italic;
+     }
 }
 
-.bage::after {
-    content: attr(data-content);
-    margin: 9px;
-    font-size: 21px;
-    font-weight: bold;
-    color: #ffffff;
-    font-style: italic;
-}
 

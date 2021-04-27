@@ -1,0 +1,47 @@
+.info-block {
+  width: 80%;
+  height: 125px;
+  max-width: 400px;
+  margin: auto;
+  top: 85px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  &-container {
+    position: absolute;
+    width: 100%;
+    top: 85px;
+  }
+
+  &__current {
+      position: relative;
+      margin-left: 20px;
+      padding-top: 20px;
+      font-family: Open Sans, serif;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 1.5em;
+  }
+
+  &__combustion {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #979797;
+    font-family: Open Sans, serif;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+
+.img-fire {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.img-arrow {
+  position: absolute;
+  top: 43px;
+  right: 19px;
+}

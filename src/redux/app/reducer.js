@@ -5,6 +5,7 @@ const initialStore = {
 	combustionBonusesCount: initValue,
 	combustionDate: '',
 	currentBonuses: initValue,
+	isDataLoaded: false,
 };
 
 export default function reducer(state = initialStore, action) {
@@ -12,6 +13,7 @@ export default function reducer(state = initialStore, action) {
 		case ActionTypes.SAVE_DATA:
 			return {
 				...state,
+				isDataLoaded: true,
 				combustionBonusesCount: action.payload.forBurningQuantity,
 				combustionDate: action.payload.dateBurning,
 				currentBonuses: action.payload.currentQuantity,
