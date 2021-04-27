@@ -9,7 +9,7 @@ import {
 	UPPER_BOUND,
 	TWO_LAST_ELEMENTS,
 	REMAINDER_VALUE,
-} from 'src/const/numbers'
+} from '../const/numbers'
 
 export const getRequestBody = () => {
 	return {
