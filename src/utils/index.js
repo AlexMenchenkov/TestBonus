@@ -1,6 +1,5 @@
 import {
 	initValue,
-	ONE,
 	FIRST_ITEM,
 	THIRD_ITEM,
 	DIVIDER_TEN,
@@ -8,7 +7,9 @@ import {
 	BOTTOM_BOUND,
 	UPPER_BOUND,
 	TWO_LAST_ELEMENTS,
-	REMAINDER_VALUE,
+	REMAINDER_VALUE_MAX,
+	SECOND_ITEM,
+	REMAINDER_VALUE_MIN,
 } from '../const/numbers'
 
 export const getRequestBody = () => {
@@ -27,8 +28,8 @@ export const getStringDeclination = (countOrigin, forms) => {
 	const count = Math.abs(countOrigin) % DIVIDER_HUNDRED;
 	const remainder = count % DIVIDER_TEN;
 	if (count > UPPER_BOUND && count < BOTTOM_BOUND) { return forms[THIRD_ITEM]; }
-	if (remainder > ONE && remainder < REMAINDER_VALUE) { return forms[ONE]; }
-	if (remainder === ONE) { return forms[FIRST_ITEM]; }
+	if (remainder > REMAINDER_VALUE_MIN && remainder < REMAINDER_VALUE_MAX) { return forms[SECOND_ITEM]; }
+	if (remainder === REMAINDER_VALUE_MIN) { return forms[FIRST_ITEM]; }
 	return `${countOrigin} ${forms[THIRD_ITEM]}`;
 }
 
@@ -37,7 +38,7 @@ export const getFormatedDate = (date) => {
 		return '';
 	}
 	const instanceDate = new Date(date);
-	const month = (`${FIRST_ITEM}` + (instanceDate.getUTCMonth() + ONE)).slice(TWO_LAST_ELEMENTS);
+	const month = (`${FIRST_ITEM}` + (instanceDate.getUTCMonth() + FIRST_ITEM)).slice(TWO_LAST_ELEMENTS);
 	const day = instanceDate.getUTCDate();
 	return `${day}.${month}`
 }
