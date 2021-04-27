@@ -3,8 +3,8 @@ import InfoBlock from './components/InfoBlock/InfoBlock';
 import {getAccessToken} from './redux/app/actions';
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
-import {textHeader, symbol, } from '../src/const/ui-texts';
-import {backgroundWhite, backgroundRed} from '../src/const/styles';
+import {TEXT_HEARED, SYMBOL_I} from '../src/const/ui-texts';
+import {BACKGROUND_RED, BACKGROUND_WHITE} from '../src/const/styles';
 import './App.css';
 import {props} from './App-prop';
 
@@ -17,13 +17,13 @@ const App = ({getAccessToken}) => {
 
       return (<>
           <Block
-              text={textHeader}
-              symbol={symbol}
-              background={backgroundWhite}
+              text={TEXT_HEARED}
+              symbol={SYMBOL_I}
+              background={BACKGROUND_WHITE}
           >
           </Block>
           <Block
-              background={backgroundRed}
+              background={BACKGROUND_RED}
           >
           </Block>
           <InfoBlock/>

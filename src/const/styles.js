@@ -1,2 +1,2 @@
-export const backgroundRed = 'linear-gradient(180deg, #D2333E 0%, #F54B55 100%)';
-export const backgroundWhite = 'white';
+export const BACKGROUND_RED = 'linear-gradient(180deg, #d2333e 0%, #f54b55 100%)';
+export const BACKGROUND_WHITE = '#ffffff';

@@ -3,7 +3,7 @@ import './InfoBlock.css'
 import {connect} from "react-redux";
 import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses} from '../../redux/app/seletors';
 import {getStringDeclination} from '../../utils/index';
-import {declinationArray} from '../../const/ui-texts'
+import {DECLINATION_ARRAY} from '../../const/ui-texts'
 import fire from '../../img/fire.svg'
 import arrow from '../../img/arrow.svg'
 import {props} from './InfoBlock-prop';
@@ -12,11 +12,11 @@ const InfoBlock = ({currentBonuses, combustionDate, combustionBonusesCount}) => 
 
 	return (<>
 		<div className={'info-block'}>
-			<div className={'info-block__current'}>{getStringDeclination(currentBonuses, declinationArray)}</div>
+			<div className={'info-block__current'}>{getStringDeclination(currentBonuses, DECLINATION_ARRAY)}</div>
 			<div className={'info-block__combustion'}>
 				{combustionDate} сгорит&nbsp;&nbsp;
 				<img className={'img-fire'} src={fire} alt={'fire'}/>&nbsp;&nbsp;
-				{getStringDeclination(combustionBonusesCount, declinationArray)}
+				{getStringDeclination(combustionBonusesCount, DECLINATION_ARRAY)}
 			</div>
 			<img className={'img-arrow'} src={arrow} alt={'arrow'}/>
 		</div>
