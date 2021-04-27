@@ -1,0 +1,10 @@
+export const ONE = 1;
+export const initValue = 0;
+export const FIRST_ITEM = 0;
+export const THIRD_ITEM = 2;
+export const DIVIDER_HUNDRED = 100;
+export const DIVIDER_TEN = 10;
+export const UPPER_BOUND = 10;
+export const BOTTOM_BOUND = 20;
+export const TWO_LAST_ELEMENTS = -2;
+export const REMAINDER_VALUE = 5;

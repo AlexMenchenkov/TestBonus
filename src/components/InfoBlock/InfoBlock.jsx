@@ -3,7 +3,7 @@ import './InfoBlock.css'
 import {connect} from "react-redux";
 import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses} from '../../redux/app/seletors';
 import {getStringDeclination} from '../../utils/index';
-import {declinationArray} from '../../const/const'
+import {declinationArray} from '../../const/ui-texts'
 import fire from '../../img/fire.svg'
 import arrow from '../../img/arrow.svg'
 import {props} from './InfoBlock-prop';
