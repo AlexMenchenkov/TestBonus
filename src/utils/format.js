@@ -1,5 +1,4 @@
 import {
-	initValue,
 	FIRST_ITEM,
 	THIRD_ITEM,
 	DIVIDER_TEN,
@@ -11,18 +10,6 @@ import {
 	SECOND_ITEM,
 	REMAINDER_VALUE_MIN,
 } from '../const/numbers'
-
-export const getRequestBody = () => {
-	return {
-		idClient: process.env.REACT_APP_CLIENT_ID,
-		accessToken: '',
-		paramName: 'device',
-		paramValue: process.env.REACT_APP_PARAM_VALUE,
-		latitude: initValue,
-		longitude: initValue,
-		sourceQuery: initValue,
-	};
-}
 
 export const getStringDeclination = (countOrigin, forms) => {
 	const count = Math.abs(countOrigin) % DIVIDER_HUNDRED;

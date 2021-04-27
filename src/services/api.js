@@ -1,5 +1,5 @@
 import axios from "axios";
-import {getRequestBody} from '../utils';
+import {getRequestBody} from '../utils/request';
 import {DEFAULT_HEADERS} from '../const/headers';
 import {URL_PROXY_CLIENTS, URL_PROXY_IBONUS} from '../const/urls';
 

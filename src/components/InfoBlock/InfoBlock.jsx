@@ -2,7 +2,7 @@ import React from "react";
 import './InfoBlock.scss'
 import {connect} from "react-redux";
 import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses, getDataLoaded} from '../../redux/app/seletors';
-import {getStringDeclination} from '../../utils/index';
+import {getStringDeclination} from '../../utils/format';
 import {DECLINATION_ARRAY} from '../../const/ui-texts'
 import fire from '../../img/fire.svg'
 import arrow from '../../img/arrow.svg'

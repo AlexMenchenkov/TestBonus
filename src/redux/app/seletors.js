@@ -1,4 +1,4 @@
-import {getFormatedDate} from '../../utils/index';
+import {getFormatedDate} from '../../utils/format';
 
 export const getCurrentBonuses = (state) => state.currentBonuses;
 export const getCombustionDate = (state) => getFormatedDate(state.combustionDate) ;
