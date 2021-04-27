@@ -1,10 +1,13 @@
+$colorWhiteBg: #ffffff;
+$colorGrey: #979797;
+
 .info-block {
   width: 80%;
   height: 125px;
   max-width: 400px;
   margin: auto;
   top: 85px;
-  background-color: #ffffff;
+  background-color: $colorWhiteBg;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 
@@ -28,7 +31,7 @@
     width: 70%;
     margin-left: 20px;
     margin-top: 10px;
-    color: #979797;
+    color: $colorGrey;
     font-family: Open Sans, serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -44,4 +47,11 @@
   position: absolute;
   top: 43px;
   right: 19px;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all ease-in .35s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
