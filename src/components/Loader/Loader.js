@@ -1,9 +1,9 @@
 import loader from '../../img/loader.gif'
-import './Loader.scss'
+import styles from './Loader.scss'
 
 export const Loader = () => {
 	return(
-		<img className={'loader'} src={loader} alt="loading"/>
+		<img className={styles.loader} src={loader} alt="loading"/>
 	)
 }
 
