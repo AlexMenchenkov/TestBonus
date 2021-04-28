@@ -11,17 +11,17 @@ import Loader from '../Loader/Loader';
 
 const InfoBlock = ({currentBonuses, combustionDate, combustionBonusesCount, isDataLoaded}) => {
 	return (<>
-		<div className={styles['info-block-container']}>
-			<div className={styles['info-block']}>
+		<div className={styles.infoBlockContainer}>
+			<div className={styles.infoBlock}>
 				{!isDataLoaded && <Loader/>}
 				{isDataLoaded && <>
-				<div className={styles['info-block__current']}>
+				<div className={styles.infoBlockCurrent}>
 					{getStringDeclination(currentBonuses, DECLINATION_ARRAY)}
-					<img className={styles['img-arrow']} src={arrow} alt={'arrow'}/>
+					<img className={styles.imgArrow} src={arrow} alt={'arrow'}/>
 				</div>
-				<div className={styles['info-block__combustion']}>
+				<div className={styles.infoBlockCombustion}>
 					{combustionDate} сгорит
-					<img className={styles['img-fire']} src={fire} alt={'fire'}/>
+					<img className={styles.imgFire} src={fire} alt={'fire'}/>
 					{getStringDeclination(combustionBonusesCount, DECLINATION_ARRAY)}
 				</div>
 				</>}
