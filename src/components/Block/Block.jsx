@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderText from '../../components/HeaderText/HeaderText';
 import Bage from '../../components/Bage/Bage';
-import styles from './Block.module.scss'
+import styles from './Block.module.scss';
 import {props} from './Block-prop';
 
 const Block = ({text, symbol, background}) => {
