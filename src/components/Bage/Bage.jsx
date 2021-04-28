@@ -1,10 +1,10 @@
 import React from "react";
-import './Bage.scss';
+import styles from './Bage.scss';
 import {props} from './Bage-prop';
 
 const Bage = ({symbol}) => {
 	return (
-		<span data-content={symbol} className={'bage'}> </span>
+		<span data-content={symbol} className={styles.bage}> </span>
 	);
 };
 
