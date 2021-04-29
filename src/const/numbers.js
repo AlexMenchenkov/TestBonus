@@ -1,4 +1,4 @@
-export const initValue = 0;
+export const INIT_VALUE = 0;
 export const FIRST_ITEM = 0;
 export const SECOND_ITEM = 1;
 export const THIRD_ITEM = 2;

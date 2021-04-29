@@ -1,10 +1,10 @@
-import {initValue} from '../../const/numbers';
+import {INIT_VALUE} from '../../const/numbers';
 import {ActionTypes} from './actions';
 
 const initialStore = {
-	combustionBonusesCount: initValue,
+	combustionBonusesCount: INIT_VALUE,
 	combustionDate: '',
-	currentBonuses: initValue,
+	currentBonuses: INIT_VALUE,
 	isDataLoaded: false,
 };
 

@@ -1,5 +1,5 @@
 import {
-	initValue,
+	INIT_VALUE,
 } from '../const/numbers'
 
 export const getRequestBody = () => {
@@ -8,9 +8,9 @@ export const getRequestBody = () => {
 		accessToken: '',
 		paramName: 'device',
 		paramValue: process.env.REACT_APP_PARAM_VALUE,
-		latitude: initValue,
-		longitude: initValue,
-		sourceQuery: initValue,
+		latitude: INIT_VALUE,
+		longitude: INIT_VALUE,
+		sourceQuery: INIT_VALUE,
 	};
 }
 
