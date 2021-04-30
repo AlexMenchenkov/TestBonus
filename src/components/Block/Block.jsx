@@ -1,10 +1,10 @@
 import React from "react";
-import HeaderText from '../../components/HeaderText/HeaderText';
-import Bage from '../../components/Bage/Bage';
+import {HeaderText} from '../../components/HeaderText/HeaderText';
+import {Bage} from '../../components/Bage/Bage';
 import styles from './Block.module.scss';
-import {props} from './Block-prop';
+import {propTypes} from './Block-prop';
 
-const Block = ({text, symbol, classStyle}) => {
+export const Block = ({text, symbol, classStyle}) => {
 
 	return (
 		<div className={`${styles.block} ${styles[classStyle]}`}>
@@ -20,6 +20,4 @@ const Block = ({text, symbol, classStyle}) => {
 	);
 };
 
-Block.propTypes = props;
-
-export default Block;
+Block.propTypes = propTypes;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const props = {
+export const propTypes = {
   combustionBonusesCount: PropTypes.number.isRequired,
   combustionDate: PropTypes.string.isRequired,
   currentBonuses: PropTypes.number.isRequired,

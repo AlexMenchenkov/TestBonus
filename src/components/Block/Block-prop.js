@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const props = {
+export const propTypes = {
   symbol: PropTypes.string,
   text: PropTypes.string,
 };
