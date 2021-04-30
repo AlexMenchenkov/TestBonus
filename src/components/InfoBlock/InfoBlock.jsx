@@ -40,7 +40,7 @@ export const InfoBlock = () => {
 	</>);
 };
 
-const withPropsValidation = props => {
+const withPropsValidation = (props) => {
 	PropTypes.checkPropTypes(propTypes, props, 'prop', '')
 	return props
 }
