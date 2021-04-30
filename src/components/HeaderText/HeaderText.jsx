@@ -5,7 +5,7 @@ import {props} from './HeaderText-prop';
 const HeaderText = ({text}) => {
 
 	return (
-		<div className={styles.block__text}>{text}</div>
+		<div className={styles.blockText}>{text}</div>
 	);
 };
 
