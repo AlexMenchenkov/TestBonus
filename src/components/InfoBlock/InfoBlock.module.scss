@@ -1,25 +1,25 @@
-$colorWhiteBg: #ffffff;
+$colorWhiteBg: #fff;
 $colorGrey: #979797;
 
 .infoBlock {
-  width: 80%;
-  height: 125px;
-  max-width: 400px;
-  margin: auto;
-  top: 85px;
-  background-color: $colorWhiteBg;
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
+    width: 80%;
+    height: 125px;
+    max-width: 400px;
+    margin: auto;
+    top: 85px;
+    background-color: $colorWhiteBg;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .infoBlockCurrent {
-      position: relative;
-      margin-left: 20px;
-      padding-top: 20px;
-      font-family: Open Sans, serif;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 1.5em;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 20px;
+    font-family: Open Sans, serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5em;
 }
 
 .infoBlockCombustion {
@@ -33,25 +33,25 @@ $colorGrey: #979797;
 }
 
 .infoBlockContainer {
-  position: absolute;
-  width: 100%;
-  top: 85px;
+    position: absolute;
+    width: 100%;
+    top: 85px;
 }
 
 .imgFire {
-  margin-left: 10px;
-  margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .imgArrow {
-  position: absolute;
-  top: 43px;
-  right: 19px;
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: all ease-in .35s;
+    position: absolute;
+    top: 43px;
+    right: 19px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in .35s;
 
   &:hover {
-    transform: scale(1.2);
+      transform: scale(1.2);
   }
 }

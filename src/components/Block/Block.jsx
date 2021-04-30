@@ -4,10 +4,10 @@ import Bage from '../../components/Bage/Bage';
 import styles from './Block.module.scss';
 import {props} from './Block-prop';
 
-const Block = ({text, symbol, background}) => {
+const Block = ({text, symbol, classStyle}) => {
 
 	return (
-		<div style={{background: `${background}`}} className={styles.block}>
+		<div className={`${styles.block} ${styles[classStyle]}`}>
 			{text && <HeaderText
 				text={text}
 			>

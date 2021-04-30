@@ -1,5 +1,17 @@
+$bgStartColor: #d2333e;
+$bgEndColor: #f54b55;
+$bgColorWgite: #fff;
+
 .block {
-  display: flex;
-  height: 150px;
-  justify-content: space-between;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.blockRed {
+    background: linear-gradient(180deg, $bgStartColor 0%, $bgEndColor 100%);
+}
+
+.blockWhite {
+    background-color: $bgColorWgite;
 }

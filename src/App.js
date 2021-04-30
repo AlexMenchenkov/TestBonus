@@ -4,7 +4,6 @@ import {getAccessToken} from './redux/app/actions';
 import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
 import {TEXT_HEARED, SYMBOL_I} from '../src/const/ui-texts';
-import {BACKGROUND_RED, BACKGROUND_WHITE} from '../src/const/styles';
 import './App.scss';
 import {props} from './App-prop';
 
@@ -19,11 +18,11 @@ const App = ({getAccessToken}) => {
           <Block
               text={TEXT_HEARED}
               symbol={SYMBOL_I}
-              background={BACKGROUND_WHITE}
+              classStyle={'blockWhite'}
           >
           </Block>
           <Block
-              background={BACKGROUND_RED}
+              classStyle={'blockRed'}
           >
           </Block>
           <InfoBlock/>
