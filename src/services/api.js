@@ -1,5 +1,5 @@
 import axios from "axios";
-import {getRequestBody} from '../utils/request';
+import {REQUEST_BODY} from '../const/request';
 import {DEFAULT_HEADERS} from '../const/headers';
 import {URL_PROXY_CLIENTS, URL_PROXY_IBONUS} from '../const/urls';
 
@@ -9,7 +9,7 @@ export const send = axios.create({
 });
 
 export async function getAccessToken() {
-	return await send.post(URL_PROXY_CLIENTS, getRequestBody());
+	return await send.post(URL_PROXY_CLIENTS, REQUEST_BODY);
 }
 
 export async function getData(token) {

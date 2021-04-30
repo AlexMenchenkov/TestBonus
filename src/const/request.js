@@ -1,9 +1,8 @@
 import {
 	INIT_VALUE,
-} from '../const/numbers'
+} from './numbers'
 
-export const getRequestBody = () => {
-	return {
+export const REQUEST_BODY = {
 		idClient: process.env.REACT_APP_CLIENT_ID,
 		accessToken: '',
 		paramName: 'device',
@@ -11,6 +10,4 @@ export const getRequestBody = () => {
 		latitude: INIT_VALUE,
 		longitude: INIT_VALUE,
 		sourceQuery: INIT_VALUE,
-	};
 }
-
