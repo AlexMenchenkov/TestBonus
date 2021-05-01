@@ -11,7 +11,6 @@ import {propTypes} from './InfoBlock-prop';
 import {Loader} from '../Loader/Loader';
 
 export const InfoBlock = () => {
-	console.log(222);
 	const [ combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded ] = withPropsValidation(
 		useSelector(state => ([
 			getCombustionDate(state),
