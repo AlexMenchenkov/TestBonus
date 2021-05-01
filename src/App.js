@@ -5,7 +5,7 @@ import React, {useEffect} from 'react';
 import {TEXT_HEADER, SYMBOL_I} from '../src/const/ui-texts';
 import {BG_RED, BG_WHITE} from '../src/const/styles';
 import './App.scss';
-import {props} from './App-prop';
+import {propTypes} from './App-prop';
 import {useDispatch} from 'react-redux';
 
 export const App = () => {
@@ -31,4 +31,4 @@ export const App = () => {
       </>);
 };
 
-App.propTypes = props;
+App.propTypes = propTypes;

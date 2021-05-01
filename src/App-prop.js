@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
 
-export const props = {
+export const propTypes = {
   getAccessToken: PropTypes.func,
 };
