@@ -11,13 +11,13 @@ import {propTypes} from './InfoBlock-prop';
 import {Loader} from '../Loader/Loader';
 
 export const InfoBlock = () => {
-	const { combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded } = withPropsValidation(
-		useSelector(state => ({
-			combustionDate: getCombustionDate(state),
-			combustionBonusesCount: getCombustionBonusesCount(state),
-			currentBonuses: getCurrentBonuses(state),
-			isDataLoaded: getDataLoaded(state),
-		}))
+	const [ combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded ] = withPropsValidation(
+		useSelector(state => ([
+			getCombustionDate(state),
+			getCombustionBonusesCount(state),
+			getCurrentBonuses(state),
+			getDataLoaded(state),
+		]))
 	);
 
 	return (<>
