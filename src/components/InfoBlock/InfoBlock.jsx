@@ -11,14 +11,14 @@ import {propTypes} from './InfoBlock-prop';
 import {Loader} from '../Loader/Loader';
 
 export const InfoBlock = () => {
-	const [ combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded ] = withPropsValidation(
-		useSelector(state => ([
+	const [combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded] = useSelector(state => ([
 			getCombustionDate(state),
 			getCombustionBonusesCount(state),
 			getCurrentBonuses(state),
 			getDataLoaded(state),
-		]), shallowEqual)
-	);
+		]), shallowEqual);
+
+	withPropsValidation({combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded});
 
 	return (<>
 		<div className={styles.infoBlockContainer}>
