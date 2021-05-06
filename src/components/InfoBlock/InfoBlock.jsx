@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
+import {useShallowEqualSelector} from '../../hooks/useShallowEqualSelector';
 import styles from './InfoBlock.module.scss';
-import {shallowEqual, useSelector} from "react-redux";
 import {getCombustionBonusesCount, getCombustionDate, getCurrentBonuses, getDataLoaded} from '../../redux/app/seletors';
 import {getStringDeclination} from '../../utils/format';
 import {DECLINATION_ARRAY} from '../../const/ui-texts'
@@ -11,12 +11,12 @@ import {propTypes} from './InfoBlock-prop';
 import {Loader} from '../Loader/Loader';
 
 export const InfoBlock = () => {
-	const [combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded] = useSelector(state => ([
+	const [combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded] = useShallowEqualSelector(state => ([
 			getCombustionDate(state),
 			getCombustionBonusesCount(state),
 			getCurrentBonuses(state),
 			getDataLoaded(state),
-		]), shallowEqual);
+		]));
 
 	withPropsValidation({combustionDate, combustionBonusesCount, currentBonuses, isDataLoaded});
 
